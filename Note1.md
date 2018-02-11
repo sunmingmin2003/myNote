@@ -49,7 +49,26 @@ Nmake install
 '$^'           --代表所有依赖文件(components)  
 ‘$<’           --代表第一个依赖的文件(components中最左边的那个)  
 
-[makefile讲解](https://wenku.baidu.com/view/2a6d7189c281e53a5802ffd4.html)
+[makefile讲解](https://wenku.baidu.com/view/2a6d7189c281e53a5802ffd4.html)  
+[微软C/C++生成参考](https://msdn.microsoft.com/zh-cn/library/91621w01.aspx)  
+## CL编译器
+输出文件
+'cl /Fi[file]' -- 命名预处理的文件  
+'/Fo<file>'    -- 命名对象文件
+'cl /Fp[file]' -- 命名.PCH文件
+'cl /Yu[file]' -- 使用.PCH文件  
+预处理器  
+'cl /FI<file>' -- 命名强制包含文件  
+  
+
+## link  
+'/NOLOGO'      -- 取消版权信息  
+'/DYNAMICBASE' --使用地址空间布局随机化 (ASLR) 功能，指定是否生成可在加载时随机重新设定基址的可执行文件映像。
+'/NOCOMPAT'     --将可执行文件标记为经验证与 Windows 数据执行保护功能兼容。
+'/INCREMENTAL:NO' --控制增量链接
+'/SUBSYSTEM'     --通知操作系统如何运行 .exe 文件。  
+## lib：Library Manager 
+## rc  
 
 ## VSCODE
 
